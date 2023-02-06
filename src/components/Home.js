@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getCoinsAction } from '../redux/coinlist/coinlist';
+import './Home.css';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -9,7 +10,6 @@ const Home = () => {
   useEffect(() => {
     dispatch(getCoinsAction());
   }, [dispatch]);
-  console.log(data);
 
   return (
     <>
