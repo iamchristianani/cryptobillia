@@ -18,14 +18,14 @@
 }
 
 .eachCoin {
-  padding: 20px 20px;
-  background-color: #4369B0;
+  padding: 20px 10px;
+  background-color: #4369b0;
   color: #fff;
 }
 
 .eachCoin:nth-child(4n+2),
-.eachCoin:nth-child(4n+3){    
-  background: #4063A6;
+.eachCoin:nth-child(4n+3) {
+  background: #4063a6;
 }
 
 .coinImage img {

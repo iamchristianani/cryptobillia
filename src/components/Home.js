@@ -17,14 +17,14 @@ const Home = () => {
       <div className="homeContainer">
         <ul className="homeUL">
           {data.map((coin) => (
-            <Coin 
-              key = {coin.id} 
-              id = {coin.id} 
-              name = {coin.name} 
-              current_price = {coin.current_price} 
-              market_cap = {coin.market_cap} 
-              total_volume = {coin.total_volume} 
-              image = {coin.image} 
+            <Coin
+              key={coin.id}
+              id={coin.id}
+              name={coin.name}
+              currentPrice={coin.current_price}
+              marketCap={coin.market_cap}
+              totalVolume={coin.total_volume}
+              image={coin.image}
             />
           ))}
         </ul>
