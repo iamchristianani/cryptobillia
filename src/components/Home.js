@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getCoinsAction } from '../redux/coinlist/coinlist';
 import './Home.css';
+import Coin from './Coin';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -14,26 +15,17 @@ const Home = () => {
   return (
     <>
       <div className="homeContainer">
-        <ul>
+        <ul className="homeUL">
           {data.map((coin) => (
-            <li key={coin.id}>
-              Name:
-              {' '}
-              {coin.name}
-              <br />
-              Current Price:
-              {' '}
-              {coin.current_price}
-              <br />
-              Market Cap:
-              {' '}
-              {coin.current_price}
-              <br />
-              Total Volume:
-              {' '}
-              {coin.total_volume}
-              <br />
-            </li>
+            <Coin
+              key={coin.id}
+              id={coin.id}
+              name={coin.name}
+              currentPrice={coin.current_price}
+              marketCap={coin.market_cap}
+              totalVolume={coin.total_volume}
+              image={coin.image}
+            />
           ))}
         </ul>
       </div>
