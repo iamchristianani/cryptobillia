@@ -173,7 +173,10 @@ If you like this project kindly leave a ⭐
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for the great resources shared.
+- I would like to thank Microverse for the great resources shared.
+- Much Appreciation to the Microverse code reviewers for their guidance.
+- Data from [CoinGecko](https://www.coingecko.com/en/api/documentation).
+- Design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
