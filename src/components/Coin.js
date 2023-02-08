@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { BsArrowRightCircle } from 'react-icons/bs';
 
 const Coin = ({
-  id, name, marketCap, currentPrice, totalVolume, image,
+  id, name, currentPrice, image, priceChange, clickArrow,
 }) => (
   <>
     <li className="eachCoin">
@@ -12,25 +12,19 @@ const Coin = ({
           <img src={image} alt={id} />
         </div>
         <div className="backIcon">
-          <BsArrowRightCircle />
+          <BsArrowRightCircle className="arrowCircle" onClick={() => (clickArrow(id))} />
         </div>
       </div>
       <div className="coinInfo">
-        <div className="coinName">
-          Name:
+        <h2 className="coinName">
           {name}
-        </div>
+        </h2>
         <div className="coinPrice">
-          Current Price:
+          $
           {currentPrice}
         </div>
-        <div className="marketCap">
-          Market Cap:
-          {marketCap}
-        </div>
-        <div className="totalVolume">
-          Total Volume:
-          {totalVolume}
+        <div className={priceChange<0 ? 'priceLess' : 'priceMore'}>
+          {priceChange}
         </div>
       </div>
     </li>
