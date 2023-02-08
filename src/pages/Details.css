@@ -1,0 +1,56 @@
+.coinHeaderBox {
+  width: 100%;
+  padding: 20px 20px;
+  background: #5789e6;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.coinHeaderBox img {
+  height: 70px;
+  margin-left: 20px;
+}
+
+.coinHeaderBoxDetails {
+  margin-left: 100px;
+}
+
+.coinHeaderBoxDetails h2 {
+  color: gold;
+}
+
+.coinHeaderBoxDetails h4 {
+  color: lemonchiffon;
+}
+
+.coinHeaderBoxDetails p {
+  margin-top: 10px;
+}
+
+.allDetailsInfo {
+  color: #fff;
+}
+
+.coinDetailsHeader {
+  padding: 10px 20px;
+  background: #35548b;
+  color: gold;
+}
+
+.coinDetailsInfo {
+  background: #3e61a5;
+  padding: 10px 20px;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding: 0 0 10px 0;
+}
+
+tr td:first-child {
+  color: lemonchiffon;
+}

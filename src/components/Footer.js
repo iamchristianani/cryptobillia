@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => (
   <footer>
-    <p>&copy; Christian</p>
+    <p>&copy; 2023 | Christian Ani</p>
   </footer>
 );
 

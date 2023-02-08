@@ -1,6 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-const FETCH_COINS = 'cryptobillia/coinlist/FECTH_COINS';
+const FETCH_COINS = 'cryptobillia/coinlist/FETCH_COINS';
 const URL = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd';
 
 const getCoinsAction = createAsyncThunk(
