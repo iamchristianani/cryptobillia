@@ -9,6 +9,7 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
+  - [📹 Video Description ](#-video-description-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -57,6 +58,14 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://cryptobillia.onrender.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- VIDEO DESCRIPTION -->
+
+## 📹 Video Description <a name="video-description"></a>
+
+- [Video Description Link](https://www.loom.com/share/a128d255583a4fbe8e7cdaa97aa67703)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
