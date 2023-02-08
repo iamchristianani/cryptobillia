@@ -1,7 +1,7 @@
 .coinHeaderBox {
   width: 100%;
   padding: 20px 20px;
-  background: #5789E6;
+  background: #5789e6;
   position: relative;
   display: flex;
   align-items: center;
@@ -34,12 +34,12 @@
 
 .coinDetailsHeader {
   padding: 10px 20px;
-  background: #35548B;
+  background: #35548b;
   color: gold;
 }
 
 .coinDetailsInfo {
-  background: #3E61A5;
+  background: #3e61a5;
   padding: 10px 20px;
 }
 

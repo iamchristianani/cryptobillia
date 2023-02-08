@@ -23,7 +23,7 @@ const Coin = ({
           $
           {currentPrice}
         </div>
-        <div className={priceChange<0 ? 'priceLess' : 'priceMore'}>
+        <div className={priceChange < 0 ? 'priceLess' : 'priceMore'}>
           {priceChange}
         </div>
       </div>

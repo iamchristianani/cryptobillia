@@ -2,7 +2,9 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import './Details.css';
-import { AiFillFacebook, AiFillGithub, AiFillTwitterCircle, AiFillRedditCircle } from 'react-icons/ai';
+import {
+  AiFillFacebook, AiFillGithub, AiFillTwitterCircle, AiFillRedditCircle,
+} from 'react-icons/ai';
 import { getDetailsAction } from '../redux/coindetails/coindetails';
 
 const Details = () => {
@@ -15,23 +17,29 @@ const Details = () => {
   }, [dispatch, coinId]);
 
   const facebookUsername = data.links ? data.links.facebook_username : null;
-  const facebookURL = "https://facebook.com/".concat(facebookUsername);
+  const facebookURL = 'https://facebook.com/'.concat(facebookUsername);
   const twitterUsername = data.links ? data.links.twitter_screen_name : null;
-  const twitterURL = "https://twitter.com/".concat(twitterUsername);
+  const twitterURL = 'https://twitter.com/'.concat(twitterUsername);
 
   return (
-    <div className='coinBox'>
+    <div className="coinBox">
       <div className="coinHeaderBox">
         <img src={data.image ? data.image.large : null} alt={data.name} />
         <div className="coinHeaderBoxDetails">
           <h2>{data.name}</h2>
-          <h4>({data.symbol})</h4>
+          <h4>
+            (
+            {data.symbol}
+            )
+          </h4>
           {
             data.market_data?.current_price
-            ? <p>
-              $
-              {data.market_data.current_price.usd}
-            </p> : null
+              ? (
+                <p>
+                  $
+                  {data.market_data.current_price.usd}
+                </p>
+              ) : null
           }
         </div>
       </div>
@@ -49,15 +57,24 @@ const Details = () => {
                 </tr>
                 <tr>
                   <td>USD Price: </td>
-                  <td>${data.market_data?.current_price?data.market_data.current_price.usd : null}</td>
+                  <td>
+                    $
+                    {data.market_data?.current_price ? data.market_data.current_price.usd : null}
+                  </td>
                 </tr>
                 <tr>
                   <td>EUR Price: </td>
-                  <td>&#8364;{data.market_data?.current_price?data.market_data.current_price.eur : null}</td>
+                  <td>
+                    &#8364;
+                    {data.market_data?.current_price ? data.market_data.current_price.eur : null}
+                  </td>
                 </tr>
                 <tr>
                   <td>GBP Price: </td>
-                  <td>&#163;{data.market_data?.current_price?data.market_data.current_price.gbp : null}</td>
+                  <td>
+                    &#163;
+                    {data.market_data?.current_price ? data.market_data.current_price.gbp : null}
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -68,7 +85,7 @@ const Details = () => {
             <h3>More Info</h3>
           </div>
           <div className="coinDetailsInfo">
-          <table>
+            <table>
               <tbody>
                 <tr>
                   <td>Market Rank: </td>
@@ -76,19 +93,22 @@ const Details = () => {
                 </tr>
                 <tr>
                   <td>Percentage Change: </td>
-                  <td>{data.market_data?data.market_data.price_change_percentage_24h: null}</td>
+                  <td>{data.market_data ? data.market_data.price_change_percentage_24h : null}</td>
                 </tr>
                 <tr>
                   <td>Circulating Supply: </td>
-                  <td>{data.market_data?data.market_data.circulating_supply : null}</td>
+                  <td>{data.market_data ? data.market_data.circulating_supply : null}</td>
                 </tr>
                 <tr>
                   <td>Market Supply: </td>
-                  <td>{data.market_data?data.market_data.total_supply : null}</td>
+                  <td>{data.market_data ? data.market_data.total_supply : null}</td>
                 </tr>
                 <tr>
                   <td>Market Cap: </td>
-                  <td>${data.market_data?.market_cap?data.market_data.market_cap.usd : null}</td>
+                  <td>
+                    $
+                    {data.market_data?.market_cap ? data.market_data.market_cap.usd : null}
+                  </td>
                 </tr>
               </tbody>
             </table>
