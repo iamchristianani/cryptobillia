@@ -1,0 +1,133 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerBox {
+  width: 100%;
+  background: #5789e6;
+  position: relative;
+}
+
+.headerBox img {
+  width: 100%;
+}
+
+.headerBoxDetails {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  color: #fff;
+}
+
+.headerBoxDetails p {
+  margin-top: 10px;
+}
+
+.searchBox {
+  width: 100%;
+}
+
+.searchBox input {
+  border: none;
+  padding: 12px;
+  width: 100%;
+}
+
+.searchBox input:focus {
+  outline: none;
+}
+
+.searchBox input:focus::placeholder {
+  color: transparent;
+}
+
+.homeUL {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.imgNdIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+.backIcon {
+  position: absolute;
+  top: 10%;
+  left: 90%;
+}
+
+.eachCoin {
+  padding: 20px 10px;
+  background-color: #4369b0;
+  color: #fff;
+  width: 175px;
+}
+
+.eachCoin:nth-child(4n+2),
+.eachCoin:nth-child(4n+3) {
+  background: #4063a6;
+}
+
+.coinImage img {
+  width: 80px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.coinName {
+  color: gold;
+}
+
+.arrowCircle {
+  font-size: 20px;
+  margin-left: -10px;
+  cursor: pointer;
+}
+
+.coinInfo {
+  text-align: right;
+}
+
+.coinDetailsInfo ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 10px 0;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailsIcons {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.priceLess {
+  width: fit-content;
+  padding: 5px;
+  border-radius: 2px;
+  font-size: 12px;
+  background-color: #f5866d;
+  color: #000;
+  float: right;
+  margin-top: 5px;
+}
+
+.priceMore {
+  width: fit-content;
+  padding: 5px;
+  border-radius: 2px;
+  font-size: 12px;
+  background-color: #90ee90;
+  color: #000;
+  float: right;
+  margin-top: 5px;
+}
