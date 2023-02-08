@@ -12,7 +12,7 @@ const Coin = ({
           <img src={image} alt={id} />
         </div>
         <div className="backIcon">
-          <BsArrowRightCircle className="arrowCircle" onClick={() => (clickArrow(id))} />
+          <BsArrowRightCircle title="backIcon" className="arrowCircle" onClick={() => (clickArrow(id))} />
         </div>
       </div>
       <div className="coinInfo">
