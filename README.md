@@ -46,9 +46,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Single Page Application**
-- **Extract data from API**
-- **Display cryptocurrency data**
+- **Shows a list of all available coins**
+- **Shows current price and 24hr percentage change for each coin on the homepage**
+- **Show more details of each coin when clicked**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -56,7 +56,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](#)
+- [Live Demo Link](https://cryptobillia.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,7 +137,8 @@ You can deploy this project using:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Improve UI**
-- [ ] **Add functionality**
+- [ ] **Create a visual representations of the data**
+- [ ] **Add More Functionalities**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
