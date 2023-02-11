@@ -67,7 +67,7 @@
   padding: 20px 10px;
   background-color: #4369b0;
   color: #fff;
-  width: 175px;
+  width: 100%;
 }
 
 .eachCoin:nth-child(4n+2),
@@ -93,21 +93,6 @@
 
 .coinInfo {
   text-align: right;
-}
-
-.coinDetailsInfo ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 10px 0;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.detailsIcons {
-  font-size: 20px;
-  cursor: pointer;
 }
 
 .priceLess {
